@@ -7,7 +7,7 @@ const HeaderWrap = styled.div`
   left: 0;
   width: 100%;
   height: 90px;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
@@ -30,8 +30,8 @@ const HeaderWrap = styled.div`
   }
 `;
 const StyledAiOutlineMenu = styled(AiOutlineMenu)`
-  font-size: 30px;
-  color: rgba(255, 255, 255, 0.4);
+  font-size: 32px;
+  color: #fff;
   box-shadow: blueviolet;
 `;
 
