@@ -15,7 +15,7 @@ javascript, react js
 
 ### WEB
 
-<img src="https://velog.velcdn.com/images/miogy/post/ed7a2893-437c-4182-8ca7-51237c6538eb/image.png" width="50%"> <img src="https://velog.velcdn.com/images/miogy/post/e6023bb5-4f93-4191-872b-66176c13bbac/image.png" width="50%">
+<img src="https://velog.velcdn.com/images/miogy/post/ed7a2893-437c-4182-8ca7-51237c6538eb/image.png" width="40%"> <img src="https://velog.velcdn.com/images/miogy/post/e6023bb5-4f93-4191-872b-66176c13bbac/image.png" width="40%">
 
 ### Tablet & Phone
 
