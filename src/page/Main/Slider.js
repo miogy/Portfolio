@@ -1,11 +1,14 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation, Autoplay } from "swiper";
+
+import ImgSlider from "./ImgSlider";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 const StyledSwiper = styled(Swiper)`
   //styled-components적용시 이름을 같이 지정하고 styled(Swiper)로 사용함
@@ -14,22 +17,55 @@ const StyledSwiper = styled(Swiper)`
   left: 0;
   width: 100%;
   height: 890px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-position: left;
+  background-size: contain, cover;
+  .swiper-button-next {
+    //브라우저에서 클래스명 확인후 적용
+    top: 0;
+    padding: 30% 10% 20% 10%;
+    color: #fff;
+    opacity: 0.8;
+    font-weight: bold;
+  }
+  .swiper-button-prev {
+    top: 0;
+    padding: 30% 10% 20% 10%;
+    color: #fff;
+    opacity: 0.8;
+    font-weight: bold;
+  }
+`;
+const StyledSlide = styled(SwiperSlide)`
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
 `;
 
 function Slider() {
   return (
     <StyledSwiper
+      spaceBetween={0} //슬라이드 사이 여백
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false, //스와이프 후 자동재생
+      }} //자동 시간
+      loop={true}
       pagination={{ type: "fraction" }}
       navigation={true}
-      modules={[Pagination, Navigation]}
-      className="mySwiper"
+      modules={[Autoplay, Pagination, Navigation]} //modules에 기능 넣기
     >
-      <SwiperSlide>img1</SwiperSlide>
-      <SwiperSlide>img2</SwiperSlide>
-      <SwiperSlide>img3</SwiperSlide>
-      <SwiperSlide>img4</SwiperSlide>
-      <SwiperSlide>img5</SwiperSlide>
+      {ImgSlider?.map((slideData) => {
+        // console.log(slideData);
+        return (
+          <StyledSlide key={slideData.id}>
+            <NavLink to={slideData.url}>
+              <img src={slideData.src} alt="pic" />
+            </NavLink>
+          </StyledSlide>
+        );
+      })}
     </StyledSwiper>
   );
 }
