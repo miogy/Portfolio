@@ -7,14 +7,14 @@ const HeaderWrap = styled.div`
   left: 0;
   width: 100%;
   height: 90px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   justify-content: space-around;
   z-index: 100;
   div {
-    width: 100%;
+    width: 80%;
     padding: 0 5%;
     display: flex;
     justify-content: space-between;

@@ -10,39 +10,6 @@ import "swiper/css/navigation";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-const StyledSwiper = styled(Swiper)`
-  //styled-components적용시 이름을 같이 지정하고 styled(Swiper)로 사용함
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 890px;
-  background-position: left;
-  background-size: contain, cover;
-  .swiper-button-next {
-    //브라우저에서 클래스명 확인후 적용
-    top: 0;
-    padding: 30% 10% 20% 10%;
-    color: #fff;
-    opacity: 0.8;
-    font-weight: bold;
-  }
-  .swiper-button-prev {
-    top: 0;
-    padding: 30% 10% 20% 10%;
-    color: #fff;
-    opacity: 0.8;
-    font-weight: bold;
-  }
-`;
-const StyledSlide = styled(SwiperSlide)`
-  width: 100%;
-
-  img {
-    width: 100%;
-  }
-`;
-
 function Slider() {
   return (
     <StyledSwiper
@@ -70,3 +37,43 @@ function Slider() {
   );
 }
 export default Slider;
+
+const StyledSwiper = styled(Swiper)`
+  //styled-components적용시 이름을 같이 지정하고 styled(Swiper)로 사용함
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  height: 890px;
+  margin: 0 auto;
+  background-position: center;
+  .swiper-button-next {
+    //브라우저에서 클래스명 확인후 적용
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 30% 10% 20% 10%;
+    color: #fff;
+    opacity: 0.8;
+    font-weight: bold;
+  }
+  .swiper-button-prev {
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 30% 10% 20% 10%;
+    color: #fff;
+    opacity: 0.8;
+    font-weight: bold;
+  }
+  .swiper-pagination {
+    margin-bottom: 30px;
+    font-size: 1.2em;
+  }
+`;
+const StyledSlide = styled(SwiperSlide)`
+  width: 100%;
+  height: 100%;
+  img {
+    width: 100%;
+  }
+`;
