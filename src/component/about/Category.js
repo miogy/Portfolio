@@ -1,14 +1,6 @@
-import { useState } from "react";
 import styled from "styled-components";
-import TechStack from "./TechStack";
-import Workexperience from "./Workexperience";
-import DesignSkill from "./DesignSkill";
-import Project from "./Project";
-import ToyProject from "./ToyProject";
 
-function Category() {
-  const [tab, setTab] = useState(0);
-
+function Category({ tab, setTab }) {
   return (
     <Title>
       <ul>
@@ -43,34 +35,26 @@ function Category() {
           Toy Project,
         </li>
       </ul>
-      <div>{stackContent[tab]}</div>
     </Title>
   );
 }
 export default Category;
 
-const stackContent = {
-  0: <TechStack />,
-  1: <Workexperience />,
-  2: <DesignSkill />,
-  3: <Project />,
-  4: <ToyProject />,
-};
-
 const Title = styled.div`
   width: 100%;
   ul {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     padding: 0;
     li {
       padding-right: 20px;
+      margin-bottom: 6px;
       text-decoration: none;
       list-style: none;
       font-size: 42px;
-      line-height: 57px;
+      height: 60px;
     }
     .active {
       border-bottom: 3px solid #000;
