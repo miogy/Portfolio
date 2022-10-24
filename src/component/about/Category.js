@@ -10,17 +10,18 @@ function Category({ tab, setTab }) {
         >
           Tech Stack,
         </li>
-        <li
-          className={`${tab === 1 ? "active" : ""}`}
-          onClick={() => setTab(1)}
-        >
-          Workexperience,
-        </li>
+
         <li
           className={`${tab === 2 ? "active" : ""}`}
           onClick={() => setTab(2)}
         >
           Design Skill,
+        </li>
+        <li
+          className={`${tab === 1 ? "active" : ""}`}
+          onClick={() => setTab(1)}
+        >
+          Workexperience,
         </li>
         <li
           className={`${tab === 3 ? "active" : ""}`}

@@ -1,9 +1,4 @@
-function ToyProjectCard({ project }) {
-  return (
-    <div>
-      {console.log(project)}
-      toycard
-    </div>
-  );
+function ToyProjectCard() {
+  return <div> toycard</div>;
 }
 export default ToyProjectCard;

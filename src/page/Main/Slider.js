@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper";
 
-import ImgSlider from "./ImgSlider";
+import ImgSliderData from "./ImgSliderData";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -23,7 +23,7 @@ function Slider() {
       navigation={true}
       modules={[Autoplay, Pagination, Navigation]} //modules에 기능 넣기
     >
-      {ImgSlider?.map((slideData) => {
+      {ImgSliderData?.map((slideData) => {
         // console.log(slideData);
         return (
           <StyledSlide key={slideData.id}>
@@ -45,7 +45,7 @@ const StyledSwiper = styled(Swiper)`
   left: 50%;
   transform: translate(-50%, 0);
   width: 100%;
-  height: 890px;
+  height: 900px;
   margin: 0 auto;
   background-position: center;
   .swiper-button-next {
