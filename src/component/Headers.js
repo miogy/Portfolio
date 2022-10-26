@@ -1,6 +1,33 @@
 import styled from "styled-components";
 
+import { RiFileUserLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
+
+function Header() {
+  return (
+    <HeaderWrap>
+      <div>
+        <Link to="/" className="headerLink">
+          <h1>MIOGY</h1>
+        </Link>
+        <Link
+          to="/info"
+          className="headerLink"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
+          <StyledRiFileUserLine size={40} />
+        </Link>
+      </div>
+    </HeaderWrap>
+  );
+}
+export default Header;
+
+
 import { AiOutlineMenu } from "react-icons/ai";
+
 
 import { RiFileUserLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
@@ -62,4 +89,3 @@ const StyledRiFileUserLine = styled(RiFileUserLine)`
   color: #fff;
   box-shadow: blueviolet;
 `;
-
