@@ -1,4 +1,4 @@
-const ImgSlider = [
+const ImgSliderData = [
   {
     id: 0,
     url: "/detaile",
@@ -42,4 +42,4 @@ const ImgSlider = [
     text: "",
   },
 ];
-export default ImgSlider;
+export default ImgSliderData;
