@@ -9,7 +9,13 @@ function Header() {
         <Link to="/" className="headerLink">
           <h1>MIOGY</h1>
         </Link>
-        <Link to="/info" className="headerLink">
+        <Link
+          to="/info"
+          className="headerLink"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
           <StyledRiFileUserLine size={40} />
         </Link>
       </div>
@@ -29,7 +35,7 @@ const HeaderWrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  z-index: 100;
+  z-index: 9999;
   div {
     width: 80%;
     padding: 0 5%;

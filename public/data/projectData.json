@@ -3,6 +3,8 @@
     {
       "id": 0,
       "contentTitle": "ALE6IX",
+      "readme": "https://github.com/miogy/1ST-PROJECT_ALE6IX",
+      "blog": "https://velog.io/@miogy/JUSTCODE-1st-Project-ALE6IX",
       "data": [
         {
           "contentiId": 0,
@@ -11,8 +13,6 @@
           "team": "개발 인원 및 기간",
           "date": "2022/8/29 ~ 2022/9/8",
           "member": "FE 4명, BE 2명",
-          "secondTitle": "프로젝트 선정이유",
-          "secondAbout": "E-commerce는 필요한 부분을 컴포넌트화하여 섹션을 나누거나 fetch를 이용하여 api통신으로 데이터를 주고 받는등 지금까지 학습한 부분을 각자 맡은 페이지내에서 복습할 수 있고 새로운 기능을 추가로 학습할 수 있기에 선정하게 되었습니다.",
           "skill": "적용기술",
           "lang": "React.js, Javascript",
           "library": "sass, react-modal, react-dom, react-icons,react-paginate, react-router-dom",
@@ -42,24 +42,15 @@
                 "id": 2,
                 "role": "제품페이지",
                 "work": "상품문의 및 상품후기 : ",
-                "url": {
-                  "qna": "https://user-images.githubusercontent.com/99234582/190320736-bcacd1ed-c186-420d-9866-437b45f0df15.mp4",
-                  "review": "https://user-images.githubusercontent.com/99234582/190320711-3e057832-9f6e-4790-95fd-7efdeb908999.mp4"
-                },
+                "url": "https://user-images.githubusercontent.com/99234582/190320711-3e057832-9f6e-4790-95fd-7efdeb908999.mp4",
                 "text": "UI및 기능 구현: fetch함수를 이용하여 api 호출하고 POST메서드를 이용하여 추가, GET메서드를 이용하여 리스트 불러오기, DELETE메서드를 이용하여 삭제구현."
               },
               {
                 "id": 3,
-                "role": "Navbar",
+                "role": "Header",
                 "work": "Navbar : ",
                 "url": "https://user-images.githubusercontent.com/99234582/190320661-f85c43c0-52d5-49db-b9bb-4cb38d528318.mp4",
                 "text": "UI및 기능 구현: mock-up데이터를 이용한 sub-nav구현"
-              },
-              {
-                "id": 4,
-                "role": "그외",
-                "work": "Footer",
-                "text": "Footer 레이아웃"
               }
             ]
           }

@@ -7,14 +7,23 @@ function Footer() {
       <dl className="footerContainer">
         <dt>Develop</dt>
         <dd>
-          <span>Git</span> <span>Velog</span>
+          <Link to="https://github.com/miogy" className="styleNone">
+            Git
+          </Link>
+          <Link to="https://github.com/miogy" className="styleNone">
+            Velog
+          </Link>
         </dd>
       </dl>
       <dl className="footerContainer">
         <dt>SNS</dt>
         <dd>
-          <span>instagram</span>
-          <span>blog</span>
+          <Link to="https://www.instagram.com/mi_ogy/" className="styleNone">
+            instagram
+          </Link>
+          <Link to="https://blog.naver.com/jjangrl87" className="styleNone">
+            blog
+          </Link>
         </dd>
       </dl>
       <dl className="footerContainer">
@@ -24,7 +33,9 @@ function Footer() {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          <Link to="/info">이력서 한눈에 보기</Link>
+          <Link to="/info" className="styleNone">
+            이력서 한눈에 보기
+          </Link>
         </dd>
       </dl>
     </FooterWrap>
@@ -52,6 +63,16 @@ const FooterWrap = styled.div`
       font-size: 0.8em;
       margin: 0;
       color: #666;
+      .styleNone {
+        text-decoration: none;
+        list-style: none;
+        color: #333;
+        margin: 0 5px 0 5px;
+        cursor: pointer;
+        &:hover {
+          color: #222;
+        }
+      }
     }
   }
 `;
