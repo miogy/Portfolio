@@ -1,16 +1,17 @@
 import About from "./About";
 import Slider from "./Slider";
-
 import styled from "styled-components";
 
-const StyledSlider = styled(Slider)``;
+const MainWrap = styled.div`
+  padding: 0 5% 0 5%;
+`;
 
 function Main() {
   return (
-    <div>
-      <StyledSlider />
+    <MainWrap>
+      <Slider />
       <About />
-    </div>
+    </MainWrap>
   );
 }
 export default Main;
